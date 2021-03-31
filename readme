@@ -3,3 +3,4 @@ https://legaled.github.io/
 TO DO
 
 fix sizing of terminal div. Need to add padding between init and terminal box
+colour 'type help to see all commands' to draw attention to it
