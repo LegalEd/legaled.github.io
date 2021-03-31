@@ -308,7 +308,7 @@
                                     cmd.out = 'help: The "' + cmd[1] + '" option does not exist.'+"\n";
                                 }
                             }else{
-                                cmd.out  = 'Use "help [comand name]" to display specific info about a command.</br>'+"\n";
+                                cmd.out  = 'Use "help [command name]" to display specific info about a command.</br>'+"\n";
                                 cmd.out += 'Available commands are:</br><ul class="sq-li">';
                                 for (var i = 0; i < command_keys.length; i+=1) {
                                     cmd.out += '<li>'+command_keys[i]+'</li>';
