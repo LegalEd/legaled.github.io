@@ -82,6 +82,11 @@ p {
   height: 500px;
 
 }
+.help {
+  color:#ad5f5f;
+  font-weight:bold,italic;
+
+}
 
   .bar {
       fill: #ad5f5f;
