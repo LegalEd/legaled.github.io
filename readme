@@ -2,5 +2,7 @@ https://legaled.github.io/
 
 TO DO
 
-fix sizing of terminal div. Need to add padding between init and terminal box
-colour 'type help to see all commands' to draw attention to it
+1. fix sizing of terminal div. Need to add padding between init and terminal box
+2. Make <pre> ascii art responsive. Doesn't display well on iphone
+3. add zoomable sunburst to cv
+4. refactor code, clean up comments
