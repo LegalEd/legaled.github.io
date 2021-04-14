@@ -36,6 +36,16 @@ NB there is a bug in the official ptty.jquery.js. It doesn't show the commands i
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCT72YFXYL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-LCT72YFXYL');
+</script>
+
 </head>
 
 <body>
@@ -97,12 +107,12 @@ NB there is a bug in the official ptty.jquery.js. It doesn't show the commands i
 
  </pre>
     <div class="row" id="init"></div>
-    <div></div>
+    <div class="row">                                                                                    </div>
 
     <div class="row" id="terminal"></div>
-    <div></div>
+    <br>
 
-    <div>
+    <div class="row">
       2021 &copy; Christopher Elias (<a href="https://github.com/LegalEd/legaled.github.io">View on GitHub</a>)
     </div>
   </article>
@@ -128,7 +138,7 @@ NB there is a bug in the official ptty.jquery.js. It doesn't show the commands i
   function typeWriter(ms) {
     if (i < init.length) {
       typed = document.getElementById("init");
-      typed.style.color = 'white';
+      typed.style.color = 'green';
       typed.innerHTML += init.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
