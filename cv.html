@@ -1,4 +1,5 @@
 <h2 align="center"> Christopher Elias</h2>
+<h5 align="center">Senior Data Engineer</h5>
 <div>
   <div>
     <div class='row'>
@@ -8,72 +9,136 @@
     </div>
 
     <div id="skillsTable"></div>
+    <div id="skillsList">
+      <table>
+        <tr><td>Languages</td><td>Python, SQL, JavaScript, Rust, Bash, Ruby, C</td></tr>
+        <tr><td>Frameworks &amp; Databases</td><td>Airflow, BigQuery, Elasticsearch, Databricks, FastAPI, Aurora, RDS, Postgres, Scrapy, Streamlit, Pandas, NumPy, dbt, Snowflake</td></tr>
+        <tr><td>ML &amp; NLP</td><td>Scikit-Learn, SpaCy, Keras, PyTorch, Agentic AI, MCP, RAG, semantic layers</td></tr>
+        <tr><td>Cloud &amp; DevOps</td><td>AWS, GCP, Docker, Kubernetes, GitHub Actions/Git, Terraform</td></tr>
+        <tr><td>Data Visualisation</td><td>Leaflet, D3.js</td></tr>
+      </table>
+    </div>
     <div id="skillsSunburst">https://observablehq.com/@d3/zoomable-sunburst</div>
     <div id="historyOutline">
       <table>
         <tr>
           <td>Job Title</td>
           <td>Employer</td>
-          <td>Date</td></tr>
+          <td>Date</td>
+        </tr>
         <tr>
-          <td>Software Engineer</td>
-          <td>Costar Group</td>
-          <td>08.2019-present</td>
+          <td>Senior Data Engineer</td>
+          <td>CoStar Group</td>
+          <td>02.2022-present</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <ul>
+              <li>Led AWS CRE API feed ingestion project from inception to over $2M in annual revenue</li>
+              <li>Architected a Kubernetes/FastAPI system estimating website similarity (sharding + Jaccard), speeding up crawler bot creation by 50%</li>
+              <li>Designed and maintained GCP/BigQuery data warehousing with dbt transformations orchestrated by Airflow</li>
+              <li>Led AWS expansion of web crawling (4000+ sites) into France, Germany and Spain</li>
+              <li>Built Airflow ML anomaly detection pipeline, improving data in 30% of feeds/crawls</li>
+              <li>Mentored 4 junior developers</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Data Engineer</td>
-          <td>Legal Ed</td>
+          <td>CoStar Group</td>
+          <td>08.2019-02.2022</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <ul>
+              <li>Core team of 10 engineers working on high-volume (&gt;1,000,000 websites) data engineering and ML</li>
+              <li>Built ML models (Sklearn, SpaCy) extracting prices, rental rates and addresses from raw HTML</li>
+              <li>Created Streamlit, Django and Leaflet/D3 visualisations of commercial real estate prices</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Data Scientist</td>
+          <td>Wolters Kluwer</td>
           <td>02.2015-07.2019</td>
         </tr>
         <tr>
+          <td colspan="3">
+            <ul>
+              <li>Built scrapers for ECJ tax legislation and ML models to classify it</li>
+              <li>Led conversion of raw legal tax data into structured SQL</li>
+              <li>Contributed to award-winning CCH International Tax Compliance technology</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
           <td>Legal Taxonomist</td>
-          <td>Lexis Nexis</td>
+          <td>LexisNexis</td>
           <td>10.2013-01.2015</td>
         </tr>
-
+        <tr>
+          <td>Legal Editor</td>
+          <td>Thomson Reuters</td>
+          <td>11.2009-10.2013</td>
+        </tr>
+        <tr>
+          <td>Solicitor</td>
+          <td>Glovers Solicitors</td>
+          <td>09.2007-09.2009</td>
+        </tr>
       </table>
     </div>
     <div id="why">
-            <table>
-              <tr>
-                <td>I am an experienced full stack developer (Python,Javascript,Rails,hmtl,css)</td>
-              </tr>
-              <tr>
-                <td>Professional but easy going</td>
-              </tr>
-              <tr>
-                <td>Strong communicator</td>
-              </tr>
-              <tr>
-                <td>Goal focussed</td>
-              </tr>
-              <tr>
-                <td>Comfortable with high levels of complexity</td>
-              </tr>
-
-              <tr>
-                <td>Experienced in working with non-developers</td>
-              </tr>
-            
-            </table>
-
+      <table>
+        <tr>
+          <td>Senior Data Engineer and qualified solicitor with 10+ years building Python and AWS data pipelines and web-crawling systems</td>
+        </tr>
+        <tr>
+          <td>Took a CRE feed project from inception to over $2M in annual revenue</td>
+        </tr>
+        <tr>
+          <td>Scaled web crawling to 4000+ sites across France, Germany and Spain</td>
+        </tr>
+        <tr>
+          <td>Built GCP/BigQuery data warehousing with dbt and Airflow</td>
+        </tr>
+        <tr>
+          <td>Mentor to four junior developers</td>
+        </tr>
+        <tr>
+          <td>Strong communicator, experienced in working with non-developers</td>
+        </tr>
+        <tr>
+          <td>Comfortable with high levels of complexity</td>
+        </tr>
+        <tr>
+          <td><b>Awards:</b> CoStar Group Volt Award (July 2025) for the CRE feed project;
+            Accounting Today Prize for Outstanding Technology Innovation (Jan. 2016)</td>
+        </tr>
+        <tr>
+          <td><b>Education:</b> BA (Hons) Philosophy, First Class Honours, University of Reading (2004)</td>
+        </tr>
+      </table>
     </div>
 
     <script>
       $('#skills').on('click', function () {
         $('#skillsTable').show();
+        $('#skillsList').show();
         $('#historyOutline').hide();
         $('#why').hide();
       });
 
       $('#history').on('click', function () {
         $('#skillsTable').hide();
+        $('#skillsList').hide();
         $('#historyOutline').show();
         $('#why').hide();
       });
 
        $('#whyMe').on('click', function () {
           $('#skillsTable').hide();
+        $('#skillsList').hide();
           $('#historyOutline').hide();
           $('#why').show();
         });
